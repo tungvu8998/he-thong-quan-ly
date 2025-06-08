@@ -234,7 +234,8 @@ bool Wallet::transferPoints(const std::string& senderUserId, const std::string& 
     Utils::appendToFile("data/transactions.log", newTransaction.toString());
     
     // unique_ptr senderWallet va receiverWallet se tu dong giai phong bo nho khi ra khoi ham
-
+	// hihihi
+	
     return transactionSuccess; // Tra ve ket qua giao dich
 }
 

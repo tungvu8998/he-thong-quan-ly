@@ -94,63 +94,64 @@ Báo Cáo: Hệ thống cho phép người dùng theo dõi số dư ví hiện t
 Mã nguồn đầy đủ của dự án hiện có trong kho chứa này. Bạn có thể clone (tải xuống) toàn bộ kho chứa về máy tính của mình.
 
 4.2. Cấu Trúc Tệp Tin
-/reward_system_project
-├── main.cpp               // Giao diện người dùng chính, điều phối luồng chương trình
-├── user.h                 // Định nghĩa lớp User
-├── user.cpp               // Triển khai các hàm thành viên của lớp User
-├── wallet.h               // Định nghĩa lớp Wallet và struct Transaction
-├── wallet.cpp             // Triển khai các hàm thành viên của lớp Wallet
-├── otp.h                  // Định nghĩa lớp OTPManager
-├── otp.cpp                // Triển khai các hàm của OTPManager
-├── utils.h                // Các hàm tiện ích chung
-├── utils.cpp              // Triển khai các hàm tiện ích chung
-└── data/                  // Thư mục chứa các tập tin dữ liệu
-    ├── users/             // Thư mục chứa tập tin dữ liệu của từng người dùng (username.txt)
-    ├── wallets/           // Thư mục chứa tập tin dữ liệu của từng ví (walletId.txt)
-    ├── user_index.txt     // Tập tin index chứa danh sách usernames
-    ├── wallet_index.txt   // Tập tin index chứa danh sách wallet IDs
-    └── transactions.log   // Tập tin ghi lại lịch sử tất cả các giao dịch
+•	/reward_system_project
+•	├── main.cpp               // Giao diện người dùng chính, điều phối luồng chương trình
+•	├── user.h                 // Định nghĩa lớp User
+•	├── user.cpp               // Triển khai các hàm thành viên của lớp User
+•	├── wallet.h               // Định nghĩa lớp Wallet và struct Transaction
+•	├── wallet.cpp             // Triển khai các hàm thành viên của lớp Wallet
+•	├── otp.h                  // Định nghĩa lớp OTPManager
+•	├── otp.cpp                // Triển khai các hàm của OTPManager
+•	├── utils.h                // Các hàm tiện ích chung
+•	├── utils.cpp              // Triển khai các hàm tiện ích chung
+•	└── data/                  // Thư mục chứa các tập tin dữ liệu
+•	├── users/             // Thư mục chứa tập tin dữ liệu của từng người dùng (username.txt)
+•	├── wallets/           // Thư mục chứa tập tin dữ liệu của từng ví (walletId.txt)
+•	├── user_index.txt     // Tập tin index chứa danh sách usernames
+•	├── wallet_index.txt   // Tập tin index chứa danh sách wallet IDs
+•	└── transactions.log   // Tập tin ghi lại lịch sử tất cả các giao dịch
 
 4.3. Các Thư Viện Kèm Theo
 Dự án sử dụng các thư viện chuẩn của C++ và C (không cần các thư viện bên ngoài đặc biệt):
 
-<iostream>: Nhập/xuất console
+•	<iostream>: Nhập/xuất console
 
-<string>: Xử lý chuỗi
+•	<string>: Xử lý chuỗi
 
-<vector>: Sử dụng vector động
+•	<vector>: Sử dụng vector động
 
-<sstream>: Thao tác với chuỗi luồng
+•	<sstream>: Thao tác với chuỗi luồng
 
-<fstream>: Đọc/ghi file
+•	<fstream>: Đọc/ghi file
 
-<ctime>: Thao tác thời gian
+•	<ctime>: Thao tác thời gian
 
-<random>: Sinh số ngẫu nhiên
+•	<random>: Sinh số ngẫu nhiên
 
-<iomanip>: Định dạng đầu ra (ví dụ: số thực)
+•	<iomanip>: Định dạng đầu ra (ví dụ: số thực)
 
-<functional>: Cho std::hash
+•	<functional>: Cho std::hash
 
-<algorithm>: Các thuật toán chung
+•	<algorithm>: Các thuật toán chung
 
-<cctype>: Kiểm tra ký tự
+•	<cctype>: Kiểm tra ký tự
 
-<memory>: Cho std::unique_ptr
+•	<memory>: Cho std::unique_ptr
 
-<stdexcept>: Cho các ngoại lệ chuẩn
+•	<stdexcept>: Cho các ngoại lệ chuẩn
 
-<string.h>: Cho strerror
+•	<string.h>: Cho strerror
 
-<cstdio>: Cho sscanf
+•	<cstdio>: Cho sscanf
 
-<direct.h> (Windows): Cho _mkdir
+•	<direct.h> (Windows): Cho _mkdir
 
-<sys/stat.h>: Cho stat, _stat, mkdir
+•	<sys/stat.h>: Cho stat, _stat, mkdir
 
-<errno.h>: Cho errno
+•	<errno.h>: Cho errno
 
-<io.h> (Windows): Cho _stat
+•	<io.h> (Windows): Cho _stat
+
 
 4.4. Biên Dịch Chương Trình
 

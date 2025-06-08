@@ -1,0 +1,3 @@
+walletId:2971acad-d280-4751-6b8a-bc975cfc9f62
+ownerUserId:1506de4a-e9d0-84eb-0b47-53ed7bfec5ba
+balance:0.00

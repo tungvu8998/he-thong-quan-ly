@@ -180,7 +180,7 @@ Nhap lua chon cua ban:
     * Bạn sẽ được đưa đến "Menu người dùng thông thường" với các chức năng như xem thông tin, cập nhật, đổi mật khẩu, xem ví, chuyển điểm, xem lịch sử.
 * **Đăng nhập (Người dùng quản lý - Admin):**
     * Nhập `2`.
-    * Nhập Username: `admin1`
+    * Nhập Username: `admin_setup`
     * Nhập Password: `adminpass`
     * Bạn sẽ được đưa đến "Menu người dùng quản lý" với các chức năng thêm:
         * `4. Theo doi danh sach tat ca tai khoan`: Xem danh sách user trong hệ thống.

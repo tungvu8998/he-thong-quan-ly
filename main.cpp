@@ -56,7 +56,9 @@ void registerAccount() {
     clearInputBuffer();
 
     // Kiem tra trung ten dang nhap
-    if (User::loadFromFile(username) != nullptr) { // loadFromFile tra ve User*
+    // Su dung unique_ptr de tu dong quan ly bo nho cho doi tuong user doc tu file
+    std::unique_ptr<User> existingUser = std::unique_ptr<User>(User::loadFromFile(username));
+    if (existingUser != nullptr) {
         std::cout << "Ten dang nhap da ton tai. Vui long chon ten khac." << std::endl;
         return;
     }
@@ -158,6 +160,7 @@ bool login() {
 }
 
 // Ham thay doi thong tin ca nhan (dung cho ca user va admin tu sua)
+// Nhan vao User* vi currentUser.get() tra ve raw pointer
 void updateProfile(User* userToUpdate, bool isAdminUpdating = false) {
     if (!userToUpdate) {
         std::cout << "Loi: Khong co thong tin nguoi dung de cap nhat." << std::endl;
@@ -413,7 +416,9 @@ void adminCreateNewAccount() {
     std::cin >> username;
     clearInputBuffer();
 
-    if (User::loadFromFile(username) != nullptr) { // loadFromFile tra ve User*
+    // Su dung unique_ptr de tu dong quan ly bo nho cho doi tuong user doc tu file
+    std::unique_ptr<User> existingUser = std::unique_ptr<User>(User::loadFromFile(username));
+    if (existingUser != nullptr) {
         std::cout << "Ten dang nhap da ton tai. Vui long chon ten khac." << std::endl;
         return;
     }
